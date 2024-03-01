@@ -8,7 +8,7 @@
 
 .main{
     padding: 2% 8%;
-    background: linear-gradient(rgba(255,242,242,.4),rgba(255,242,242,.4)),url("recursos/authentication-image.avif");
+    background: linear-gradient(rgba(255,242,242,.4),rgba(255,242,242,.4)),url("../recursos/authentication-image.avif");
     background-position: left;
 }
 
