@@ -1,0 +1,33 @@
+footer{
+    background-color: #402B3A;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left:0;
+    padding-top: 0.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__div{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__a--div{
+    margin-left: 50%;
+    margin-right: 50%;
+    transition-property: margin-bottom;
+    transition-duration: 500ms;
+    transition-delay: 100ms;
+}
+
+.footer__img--a{
+    height: 50px;
+    filter: invert(1);
+
+}
+
+.footer__a--div:hover{
+    margin-bottom: 4%;
+}
