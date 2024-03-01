@@ -9,3 +9,8 @@ Markup Language: HTML5, CSS
 Programming Language: JavaScript, TypeScript
 Database: Firebase
 Framework: Angular
+
+Trello: https://trello.com/b/txPXBoTD/pwm
+Figma: https://www.figma.com/file/eTsYlqtminrWNlUPFi3Vnq/Mockups?type=design&node-id=0%3A1&mode=design&t=hlcFNvQTZ7vl0RTe-1
+
+
