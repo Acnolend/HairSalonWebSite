@@ -14,28 +14,15 @@
 <body>
 
     <header class="header">
-        <div class="header__div">
-            <a href="homepage.html"><img src="recursos/scissors-solid.svg" alt="Logo Peluquería" class="header__img--div"></a>
-        </div>
-        <nav class="header__nav">
-            <li class="header__li--nav"><a href="haircuts.html" class="header__a--nav">Peinados</a></li>
-            <li class="header__li--nav"><a href="contactus.html" class="header__a--nav">Contáctanos</a></li>
-            <li class="header__li--nav"><a href="reviews.html" class="header__a--nav">Reseñas</a></li>
-            <li class="header__li--nav"><a href="order.html" class="header__a--nav">Reservar</a></li>
-        </nav>
-        <nav class="header__nav2">
-            <li class="header__li--nav2"><a href="login.html" class="header__a--nav2">Iniciar sesión</a></li>
-            <li class="header__li--nav2"><a href="register.html" class="header__a--nav2">Registrarse</a></li>
-        </nav>
     </header>
 
     <main class="main">
         <div class="main__div">
-            <form class="main__form--div">
+            <form class="main__form--div" id="form">
                 <fieldset class="main__fieldset--form">
                     <input type="email" name="email" placeholder="Correo electronico" required class="main__input--fieldset">
                     <input type="password" name="password" placeholder="Contraseña" required class="main__input--fieldset">
-                    <input type="submit" value="Iniciar sesion" class="main__input--fieldset">
+                    <input type="submit" value="Iniciar sesion" class="main__input--fieldset" id="confirm">
                 </fieldset>
             </form>
         </div>
@@ -44,6 +31,7 @@
     <footer class="footer">
     </footer>
 
+    <script src="js/header-loader.js"></script>
     <script src="js/footer-loader.js"></script>
 </body>
 </html>
