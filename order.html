@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nombre de la peluqueria</title>
+    <link rel="icon" type="png" href="recursos/scissors-solid.svg">
+    <link rel="stylesheet" href="header--styles.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="footer--styles.css">
+</head>
+<body class="body">
+    <header class="header">
+    </header>
+
+    <main class="main">
+        <p class="main__p--div3">Las reservas están disponibles de Lunes a Sábados</p>
+        <div class="main__div3">
+            <div>
+                <p class="main__p2--div3">Lunes-Viernes</p>
+                <ul>
+                    <li class="main__li--ul">Mañana -> xx:xx hasta yy:yy</li>
+                    <li class="main__li--ul">Tarde -> xx:xx hasta yy:yy</li>
+                </ul>
+            </div>
+            <div>
+                <p class="main__p2--div3">Sábado</p>
+                <ul>
+                    <li class="main__li--ul">Mañana -> xx:xx hasta yy:yy</li>
+                </ul>
+            </div>
+        </div>
+
+        <form action="/send/" class="main__form">
+            <div class="main__div">
+                <div class="main__Fecha--div">
+                    <label for="Fecha" class="main__label--div">Introduzca una fecha para su reserva: </label>
+                    <input type="date" id="Fecha" class="main__input--div" required>
+                </div>
+                <br>
+                <div class="main__Hora--div">
+                    <label for="Fecha" class="main__label--div">Elija una hora para ser atendido: </label>
+                    <select class="main__input--div" name="Horas" id="Horas" required>
+                        <option value="09:00">9:30 AM</option>
+                        <option value="12:00">10:00 PM</option>
+                        <option value="15:00">10:30 PM</option>
+                        <option value="18:00">11:00 PM</option>
+                        <option value="18:00">11:30 PM</option>
+                    </select>
+                </div>
+                <br>
+                <input type="submit" value="Enviar" class="main__input2--div">
+            </div>
+        </form>
+
+        <section class="main__section"> 
+            <h1 class="main__h1--section">FAQS</h1>
+            <ul class="main__ul--section">
+                <li class="main__li--section">
+                    <div class="main__div-section">
+                        <span class="main__span--section"></span>
+                        <span>Lorem ipsum dolor sit amet</span>
+                    </div>
+                    <div class="main__div2--section">
+                        <p class="main__p--div">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </li>
+                <li class="main__li--section">
+                    <div class="main__div-section">
+                        <span class="main__span--section"></span>
+                        <span>Lorem ipsum dolor sit amet</span>
+                    </div>
+                    <div class="main__div2--section">
+                        <p class="main__p--div">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </li>
+                <li class="main__li--section">
+                    <div class="main__div-section">
+                        <span class="main__span--section"></span>
+                        <span>Lorem ipsum dolor sit amet</span>
+                    </div>
+                    <div class="main__div2--section">
+                        <p class="main__p--div">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>   
+    </main>
+
+    <footer class="footer">
+    </footer>
+
+    <script src="js/header-loader.js"></script>
+    <script src="js/footer-loader.js"></script>
+    <script src="js/orderRestriction.js"></script>
+    <script src="js/Order.js"></script>
+</body>
+</html>
