@@ -39,3 +39,5 @@ We used Trello to organize the different tasks to each author. You can easily ch
 
 ## Design
 The desing section of the website was developed trying to make it as similar as the mockups we made. You can easily watch the mock in: https://www.figma.com/file/eTsYlqtminrWNlUPFi3Vnq/Mockups?type=design&node-id=0%3A1&mode=design&t=hlcFNvQTZ7vl0RTe-1
+## Requirements
+The requirements of the website could be read, in Spanish, here: https://drive.google.com/file/d/1lPxcfU4u0HMHqoFJDvHahACma6NZ-WNZ/view?usp=sharing
