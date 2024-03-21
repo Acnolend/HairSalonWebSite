@@ -72,6 +72,10 @@
         order: 3;
     }
 
+    .header__nav3 {
+        display: block;
+    }
+
     .header__div--nav3 {
         display: block;
         position: relative;
