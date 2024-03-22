@@ -27,7 +27,7 @@ if (loggedUser) {
 function register() {
     loggedUser = true;
     sessionStorage.setItem('loggedUser', 'true');
-    window.location.href = "homepage.html";
+    window.location.href = "index.html";
 }
 
 
@@ -36,8 +36,12 @@ Links.forEach(link => {
     link.addEventListener('click', function(event) {
         event.preventDefault();
         registerOrLogin = this.textContent.trim().toLowerCase();
-        sessionStorage.setItem('registerOrLogin', registerOrLogin);
-        window.location.href = "authentication.html";
+        if (registerOrLogin !== "nombre de usuario") {
+            sessionStorage.setItem('registerOrLogin', registerOrLogin);
+            window.location.href = "authentication.html";
+        } else {
+            window.location.href = "date_managment.html";
+        }
     });
 });
 
