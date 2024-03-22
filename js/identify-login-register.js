@@ -27,9 +27,19 @@ fetch("../json/authentication.json")
 
         if (option === "registrarse") {
             const script = document.createElement("script");
-            script.src = "../js/date-verify.js";
+            script.src = "../js/verification/date-verify.js";
             document.body.appendChild(script);
+            const script2 = document.createElement("script");
+            script2.src = "../js/verification/username-verify.js";
+            document.body.appendChild(script2);
+            const script4 = document.createElement("script");
+            script4.src = "../js/verification/password-verify.js";
+            document.body.appendChild(script4);
         }
+
+        const script3 = document.createElement("script");
+        script3.src = "../js/verification/email-verify.js";
+        document.body.appendChild(script3);
 
     })
     .catch(error => {
