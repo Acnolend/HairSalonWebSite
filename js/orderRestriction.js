@@ -1,4 +1,3 @@
-console.log("Dentro");
 var fechaActual = new Date();
 
 var fechaManana = new Date();

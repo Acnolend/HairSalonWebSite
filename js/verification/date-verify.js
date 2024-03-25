@@ -1,4 +1,6 @@
 const confirm = document.getElementById('confirm');
+const birthdayInput = document.getElementById('birthday');
+
 limitDate();
 function limitDate(){
     const actualDate = new Date();
@@ -7,12 +9,12 @@ function limitDate(){
 }
 function verifyAge(){
     if(calculateAge() < 18){
-        alert('Debes ser mayor de edad para registrarte.');
+        alert("Debes ser mayor de edad para registrarte");
         event.preventDefault();
     }
 }
 function calculateAge(){
-    const birthday = document.getElementById('birthday').value;
+    const birthday = birthdayInput.value;
     const birthdayDate = new Date(birthday);
 
     const actualDate = new Date();
