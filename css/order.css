@@ -91,7 +91,7 @@
 .main__h1--section{
     text-align: center;
     font-size: 3em;
-    margin: 1em;
+    margin-left: -6em;
 }
 
 .main__li--section{
@@ -122,6 +122,7 @@
 .main__ul--section{
     list-style: none;
     max-width: 1400px;
+    margin-left: -3em;
 }
 
 .main__p--div{
@@ -142,4 +143,68 @@
 
 .main__span--section-opened{
     transform: rotate(90deg);
+}
+
+@media only screen and (min-width: 360px) and (max-width: 414px) and (min-height: 640px) and (max-height: 896px) {
+    .main__p2--div3{
+        display: none;
+    }
+    .main__p--div3{
+        display: none;
+    }
+    .main__li--ul{
+        display: none;
+    }
+    .main__div{
+        margin-top: 2em;
+        width: 20em;
+    }
+    .main__section{
+        margin-bottom: 5em;
+    }
+    .main__form{
+        margin-right: 10em;
+        margin-left: 0em;
+    }
+    .body{
+        margin-left: 1em;
+    }
+    .main__label--div{
+        font-size: 1em;
+    }
+    .main__input--div{
+        width: 20em;
+    }
+    .main__h1--section{
+        font-size: 2.5em;
+        margin-bottom: 0em;
+    }
+    .main__input2--div{
+        margin-left: 7em;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 962px) {
+    .body{
+        margin-left: 0em;
+    }
+    .main__div3{
+        margin-left: 6.2em;
+    }
+    .main__p--div3{
+        margin-left: 3.4em;
+    }
+    .main__p2--div3{
+        width: 15em;
+    }
+    .main__li--ul{
+        width: 10em;
+        margin-left: 0;
+    }
+    .main__div{
+        margin-left: 10em;
+    }
+    .main__section{
+        margin-bottom: 7em;
+    }
 }
