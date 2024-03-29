@@ -19,14 +19,17 @@
     
     
         <main class="main">
-            <table id="main__tablaIPT">
+            <table id="main__tablaIPT_PC">
                 <tr><th></th>
-                    <th><div class="main__tablaIPT--div">Nombre de usuario</div></th>
+                    <th>
+                    <nav class="main__tablaIPT--div" id="username">
+                    </nav>
+                    </th>
                     <th></th>
                 </tr>
                 <tr>
                     <td>
-                        <img id="solid_user" src="recursos/user-solid.svg" width="64px">
+                        <img id="solid_user" src="" width="64px">
                     </td>
                     <td>
                         <form class="main__form"> 
@@ -44,6 +47,35 @@
                 </tr>
             
             </table> 
+
+            <table id="main__tablaIPT_Movil">
+                <tr><th></th>
+                    <th><div class="main__tablaIPT--div">Nombre de usuario</div></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>
+                        <img id="solid_user" src="recursos/user-solid.svg" width="64px">
+                    </td>
+                    <td>
+                        <form class="main__form"> 
+                            <textarea class="main__form--textarea" id="Nombre" cols="30" rows="1" placeholder="Nombre de usuario"></textarea> 
+                            <br>
+                            <textarea class="main__form--textarea" id="Contraseña" cols="30" rows="1" placeholder="Contraseña"></textarea>    
+                        </form>
+                    </td>
+                    <td>
+                        <button class="main__BotonAct" type="button"><img src="recursos/floppy-disk-solid.svg" class="update"></button>
+                        <br>
+                        <br>
+                        <button class="main__BotonAct" type="button"><img src="recursos/floppy-disk-solid.svg" class="update"></button>   
+                    </td>
+                </tr>
+                <tr>
+                    
+                </tr>
+            
+            </table> 
             <nav id="main__tabla"> 
             </nav>
             <br>
@@ -55,5 +87,9 @@
     <script src="js/header-loader.js"></script>
     <script src="js/footer-loader.js"></script>
     <script src="js/date_managment.js"></script>
+    <script src="js/date_management_load_userinf.js"></script>
+    <script src="js/date_management_load_reservations.js"></script>
+    <script src="json/date_management_reservations.json"></script>
+    <script src="json/date_management.json"></script>
 </body>
 </html>
