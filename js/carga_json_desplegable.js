@@ -5,18 +5,22 @@ fetch("json/desplegable.json")
         const days = ["day1", "day2", "day3", "day4"];
         const time = ["hour1", "hour2", "hour3", "hour4"];
 
-        const reservations_length = 4;
+        const select = document.getElementById("selector");
+        select.innerHTML = '';
 
-        for (i = 0;i<reservations_length;i++) {
+        const reservations_length = data.desplegable.length;
+
+        for (let i = 0;i<reservations_length;i++) {
 
             const dia = data.desplegable[i].dia;
             const hora = data.desplegable[i].hora;
 
-            const dates = document.getElementById(days[i]);
-            const times = document.getElementById(time[i]);
+            const newOption = document.createElement('option');
+            newOption.value = dia + ' -- ' + hora;
+            newOption.textContent = dia + ' -- ' + hora;
 
-            dates.innerText = dia;
-            times.innerText = hora;
+            // Agregar la nueva opción al select
+            select.appendChild(newOption);
         }
     
     })
