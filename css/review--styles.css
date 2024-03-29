@@ -5,15 +5,16 @@
 }
 
 .main__reseña_primera{
-    margin-top: 5%;
+    margin-top: 7.5%;
 }
-
-
 
 .main__reseña_otro--imagen_perfil {
     padding-top: 10px;
     position: absolute;
     filter: invert(1);
+    margin-right: 10%;
+    border: black;
+    border-radius: 10px;
 }
 
 #main__Reseña_propia--visitas {
@@ -41,19 +42,13 @@
 }
 
 
-#Opiniones {
+.Opiniones {
     display: flex;
     text-align: center;
     margin-left: 10%;
     padding-top: 10px;
     padding-bottom: 20px;
 
-}
-
-#imagen_perfil{
-    float: left;
-    margin-right: 10px;
-    
 }
 
 #main__Reseña_propia--div {
@@ -82,16 +77,98 @@ section {
     margin-right: 10%;
 }
 
-body {
-    background-color: #FFF2F2;
-}
-
 .main__Reseña_propia {
     padding-top: 35px;
 }
 
-.star {
+.star_grey {
+    font-size: 20px;
+    color: #bbb;
     padding-left: 5px;
-    height: 15px;
-    filter: invert(1);   
+}
+
+.star_gold {
+    font-size: 20px;
+    color: gold; 
+    padding-left: 5px;
+    
+}
+
+.star_rate {
+    font-size: 20px;
+    color: #bbb;
+    transition: color 0.3s;
+    cursor: pointer;  
+}
+
+.star_rate:hover,
+.star_rate.checked{
+    color: gold;
+
+}
+
+#star_rate {
+    background-color: #402B3A;
+}
+
+body {
+    background-color: #FFF2F2;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 414px) and (min-height: 640px) and (max-height: 896px) {
+    .main__reseña_primera{
+        margin-top: 30%;
+    }
+    
+    .Opiniones {
+        display: flex;
+        text-align: center;
+        margin-left: 10%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-size: 15px;
+    }
+
+    .main__reseña_otro--imagen_perfil {
+        padding-top: 10px;
+        margin-right: 10%;
+        height: 30px;
+    }
+
+    .imagen_perfil_reseña {
+        width: 25px;
+
+    }
+
+    #first_star_rate {
+        padding-left: 160px;
+    }
+
+    .star_rate {
+        padding-right: 5.6px;
+    }
+   
+
+    #main__Reseña_propia--Espacio_reseña {
+        width: 300px;
+    }
+
+    #ultima_reseña {
+        margin-bottom: 10%;
+    }
+}
+
+@media only screen and (min-width: 883px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 962px) {
+
+    #main__Reseña_propia--boton_enviar_reseña {
+        font-size: 25px;
+        border-radius: 30px;
+
+    }
+
+    .star_rate {
+        height: 17px;
+        padding-left: 7px;
+    }
+
 }
