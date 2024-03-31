@@ -41,3 +41,6 @@ We used Trello to organize the different tasks to each author. You can easily ch
 The desing section of the website was developed trying to make it as similar as the mockups we made. You can easily watch the mock in: https://www.figma.com/file/eTsYlqtminrWNlUPFi3Vnq/Mockups?type=design&node-id=0%3A1&mode=design&t=hlcFNvQTZ7vl0RTe-1
 ## Requirements
 The requirements of the website could be read, in Spanish, here: https://drive.google.com/file/d/1lPxcfU4u0HMHqoFJDvHahACma6NZ-WNZ/view?usp=sharing
+
+## Sprint 2
+In this second sprint we have added more features to the website, such as a responsive desing for mobile: 360-414 x640-896 and also for tablet: 883-1280x800-962, validation tests for the forms and dinamic loading of the pages.
