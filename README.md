@@ -1,43 +1,27 @@
-
 # HairSalonWebSite
 
-A website for a hair salon, it was design in HTML, CSS and JavaScript. It's a college project, the idea of the project was chosen by us, it wasn't force by the professor. We've used different IDEs such as Visual Studio Code and WebStorm. Keep in mind that if you like run the project in VS code you should install an extension called "Live Server". After that you must right click on the .html file you want to run and click on "Run with Live Server". 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
 
+## Development server
 
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+## Code scaffolding
 
-## Authors
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-- [@kratoscordoba7](https://www.github.com/kratoscordoba7) -> Heliot Jesús Segura 
-                                                              González
-- [@Acnolend](https://github.com/Acnolend) -> Antonio Manuel Sánchez Ramírez
-- [@Abelrt11](https://github.com/Abelrt11) -> Abel José Romero Tavío
+## Build
 
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+## Running unit tests
 
-## Technologies
-        - HTML: Version 5
-        - CSS: Version 3
-        - JavaScript: Version 9.0.0
-        - Python: Version 3.x
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Run Locally
-    To run this project you need to:
-        - Click CTRL + R and write cmd
-        - In cmd console type python --version, if you don't have it you need to download it
-        - Click on "code" button
-        - Click on "Download ZIP"
-        - Place the .zip project in a folder you like
-        - Open again the console cmd and type "cd Absolute_Path_Of_The_Folder_You_Chose"
-        - After that, type "python -m http.server" in cmd
-        - Now, in whatever web browser you prefer type "localhost:8000/homepage.html" 
+## Running end-to-end tests
 
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Roadmap
+## Further help
 
-We used Trello to organize the different tasks to each author. You can easily check it out in: https://trello.com/b/txPXBoTD/pwm
-
-## Design
-The desing section of the website was developed trying to make it as similar as the mockups we made. You can easily watch the mock in: https://www.figma.com/file/eTsYlqtminrWNlUPFi3Vnq/Mockups?type=design&node-id=0%3A1&mode=design&t=hlcFNvQTZ7vl0RTe-1
-## Requirements
-The requirements of the website could be read, in Spanish, here: https://drive.google.com/file/d/1lPxcfU4u0HMHqoFJDvHahACma6NZ-WNZ/view?usp=sharing
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
