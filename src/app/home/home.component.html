@@ -1,0 +1,17 @@
+<main class="main">
+  <div class="main__div">
+    <div class="main__div--div">
+      <img src="{{ carouselService.getCurrentImage() }}" class="main__img--div">
+      <button class="main__button--div" id="prev-button" (click)="carouselService.previousImage()"><</button>
+      <button class="main__button--div" id="next-button" (click)="carouselService.nextImage()">></button>
+    </div>
+    <a class="main__a--div" href="order.html">Reserve su cita</a>
+  </div>
+
+  <h1 class="main__h1">Sobre nosotros</h1>
+
+  <div class="main__div2">
+    <img src="assets/becca-hair-salon.jpg" class="main__img--div2">
+    <span class="main__span--div2">En nuestra peluquería, nos dedicamos a ofrecer servicios de primera calidad respaldados por un equipo de estilistas talentosos y apasionados. Desde 2022, hemos sido un pilar en nuestra comunidad, proporcionando cortes de cabello, peinados y tratamientos de coloración que realzan la belleza de nuestros clientes y los hacen sentir renovados.</span>
+  </div>
+</main>
