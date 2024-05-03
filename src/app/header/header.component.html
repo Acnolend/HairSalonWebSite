@@ -12,7 +12,7 @@
 
   <nav class="header__nav2">
     <ng-container *ngIf="loggedUserService.getLoggedUser | async; else notLoggedIn">
-      <li class="header__li--nav2"><a href="date_managment.html" class="header__a--nav2">Nombre de usuario</a></li>
+      <li class="header__li--nav2"><a href="date_managment.html" class="header__a--nav2">{{ userData?.name }}</a></li>
     </ng-container>
     <ng-template #notLoggedIn>
       <li class="header__li--nav2"><a routerLink="/authentication" class="header__a--nav2" (click)="loggedUserService.setWhatAClick('iniciar sesión')">Iniciar sesión</a></li>

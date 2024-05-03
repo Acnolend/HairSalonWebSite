@@ -4,6 +4,8 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { LoggedUserService } from "../services/logged-user.service";
 import { adultValidator } from "./date.validator";
 import { Router } from '@angular/router';
+import { AuthService } from "../services/auth.service";
+import {user} from "@angular/fire/auth";
 
 @Component({
   selector: 'app-authentication',
@@ -13,8 +15,10 @@ import { Router } from '@angular/router';
 export class AuthenticationComponent implements OnInit {
   formData: any;
   authenticationForm!: FormGroup;
+  option: string | undefined;
 
-  constructor(private http: HttpClient, private fb: FormBuilder, public loggedUserService: LoggedUserService, private router: Router) { }
+  constructor(private http: HttpClient, private fb: FormBuilder, public loggedUserService: LoggedUserService, private router: Router,
+              private authservice: AuthService) { }
 
   ngOnInit(): void {
     this.loggedUserService.getWhatAClick().subscribe(option => {
@@ -50,14 +54,37 @@ export class AuthenticationComponent implements OnInit {
         }
       })
       console.log(this.formData);
+      console.log(this.formData.submitText);
     });
   }
 
   onSubmit() {
     if(this.authenticationForm.valid) {
       console.log("Los datos del formulario son: ",this.authenticationForm.value);
-      this.loggedUserService.setLoggedUser(true);
-      this.router.navigate(['/']);
+      if(this.formData.submitText == 'Registrarse') {
+        let email = this.authenticationForm.get('email')?.value;
+        let password = this.authenticationForm.get('password')?.value;
+        let username = this.authenticationForm.get('username')?.value;
+        let birthday = this.authenticationForm.get('birthday')?.value;
+        this.authservice.register(email, password, username, birthday)
+          .then(() => {
+            this.loggedUserService.setLoggedUser(true);
+            this.router.navigate(['/']);
+          });
+      }
+      if(this.formData.submitText == 'Iniciar Sesión') {
+        let email = this.authenticationForm.get('email')?.value;
+        let password = this.authenticationForm.get('password')?.value;
+        this.authservice.login(email, password)
+          .then(() => {
+            this.loggedUserService.setLoggedUser(true);
+            this.router.navigate(['/']);
+          })
+          .catch(error => {
+            console.error("Error al iniciar sesión:", error);
+            alert('Fallo al intentar iniciar sesión, no se ha encontrado ningún usuario');
+          });
+      }
     } else {
       Object.keys(this.authenticationForm.controls).forEach(field => {
         const control = this.authenticationForm.get(field);
