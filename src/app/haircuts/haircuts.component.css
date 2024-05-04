@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: Inter;
+    text-decoration: none;
+}
+
+.main {
+    margin: 0;
+    margin-left: -1em;
+    margin-right: -1em;
+    padding-left: 7.3em;
+    padding-top: 2.1em;
+    padding-bottom: 2em;
+    background-color: #FFF2F2;
+}
+
+#imagen-3{
+    margin-bottom: 5em;
+    margin-left: 0.5em;
+}
+
+#imagen-0{
+    margin-top: 5em;
+    margin-left: 0.5em;
+}
+
+#nombre-0{
+    margin-top: 1.2em;
+}
+
+.main__img--div{
+    height: 400px; 
+    width: auto;
+    margin-bottom: 3em;
+    margin-left: 0.5em;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.main__img--div:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.main__div{
+    display:inline-flex;
+}
+
+.main__div5{
+    display: block;
+    margin-left: 3em;
+    margin-right: 8%;
+}
+
+.main__h1--div{
+    margin-top: 0;
+    color: #472D2D;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.main__h2--div{
+    color: #DEA057;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 414px) and (min-height: 640px) and (max-height: 896px) {
+    .main__div{
+        display:block;
+    }
+
+    .main__div5{
+        margin-bottom: 5%;
+        margin-left: 0%;
+    }
+
+    .main__img--div{
+        margin-top: 20%;
+        margin-bottom: 0;
+        height: 350px; 
+        width: auto;
+    }  
+
+    .main__h1--div{
+        display: none;
+    }
+
+    .main__h2--div{
+        margin-bottom: 0em;
+        margin-top: 0%;
+
+    }
+
+    .body {
+        background-color: #FFF2F2;
+        margin-left: 1.60em;
+        margin-top: 3em;
+        margin-bottom: 6em;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 962px) {
+    .body{
+        margin-bottom: 3em;
+        margin-left: 3em;      
+    }
+
+    .main__img--div{
+        margin-top: 1em;
+        height: 400px; 
+        width: auto;
+    }
+    .main__h1--div{
+        margin-top: 0.5em;
+        margin-bottom: 0;
+    }
+
+    .main__h2--div{
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+}

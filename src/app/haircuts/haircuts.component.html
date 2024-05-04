@@ -1,0 +1,16 @@
+<body class="body">
+  
+
+<main class="main" id="main">
+    <div *ngFor="let imagen of imagenes; let i = index" class="main__div">
+        <a routerLink="/order" class="main__img--div">
+          <img [src]="imagen.url" [alt]="imagen.Name" class="main__img--div" [id]="'imagen-' + i"/>
+        </a>
+      <div class="main__div5">
+        <h1 class="main__h1--div" [id]="'nombre-' + i">{{ imagen.Name }}</h1>
+        <br/>
+        <h2 class="main__h2--div">{{ imagen.Descripcion }}</h2>
+      </div>
+    </div>
+</main>
+</body>

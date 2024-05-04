@@ -1,0 +1,59 @@
+<body class="body">
+    <main class="main">
+        <br>
+        <p class="main__p--div3">Las reservas están disponibles de Lunes a Sábados</p>
+        <div class="main__div3">
+            <div>
+                <p class="main__p2--div3">Lunes-Viernes</p>
+                <ul>
+                    <li class="main__li--ul">Mañana -> 08:00 hasta 14:00</li>
+                    <li class="main__li--ul">Tarde -> 16:00 hasta 20:00</li>
+                </ul>
+            </div>
+            <div>
+                <p class="main__p2--div3">Sábado</p>
+                <ul>
+                    <li class="main__li--ul">Mañana -> 09:00 hasta 13:30</li>
+                </ul>
+            </div>
+        </div>
+
+        <form action="/send/" class="main__form">
+            <div class="main__div">
+                <div class="main__Fecha--div">
+                    <label for="Fecha" class="main__label--div">Introduzca una fecha para su reserva: </label>
+                    <input type="date" id="Fecha" class="main__input--div" required>
+                </div>
+                <br>
+                <div class="main__Hora--div">
+                    <label for="Fecha" class="main__label--div">Elija una hora para ser atendido: </label>
+                    <select class="main__input--div" name="Horas" id="Horas" required>
+                        <option value="09:00">9:30 AM</option>
+                        <option value="12:00">10:00 PM</option>
+                        <option value="15:00">10:30 PM</option>
+                        <option value="18:00">11:00 PM</option>
+                        <option value="18:00">11:30 PM</option>
+                    </select>
+                </div>
+                <br>
+                <input type="submit" value="Enviar" class="main__input2--div" id="Enviar">
+            </div>
+        </form>
+
+        <section class="main__section"> 
+            <h1 class="main__h1--section">FAQS</h1>
+            <ul (click)="Clicked($event)" *ngFor="let pregunta of Preguntas" class="main__ul--section">
+                <li class="main__li--section">
+                    <div class="main__div-section">
+                        <span class="main__span--section"></span>
+                        <span>{{ pregunta.Pregunta }}</span>
+                    </div>
+                    <div class="main__div2--section">
+                        <p>{{ pregunta.Respuesta }}</p>
+                    </div>
+                </li>
+            </ul>
+        </section>   
+    </main>
+
+</body>

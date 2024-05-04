@@ -11,6 +11,9 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { AngularFireModule } from '@angular/fire/compat';
 import { FirestoreModule } from '@angular/fire/firestore';
 import { environment } from "../environments/environments";
+import { HaircutsComponent } from './haircuts/haircuts.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { environment } from "../environments/environments";
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    AuthenticationComponent
+    AuthenticationComponent,
+    HaircutsComponent,
+    ContactusComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
