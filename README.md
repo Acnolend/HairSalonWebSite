@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Sprint 3
+
+Much of the HTML and CSS content has been adapted to Angular, Firebase has been added to the project allowing user authentication, and validations have been added to the Login and Register fields.
