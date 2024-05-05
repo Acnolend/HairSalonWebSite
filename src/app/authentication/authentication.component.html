@@ -1,0 +1,10 @@
+<main class="main">
+  <div class="main__div">
+    <form class="main__form--div" id="form" [formGroup]="authenticationForm" (ngSubmit)="onSubmit()" *ngIf="formData">
+      <fieldset class="main__fieldset--form" id="fieldset">
+        <input *ngFor="let field of formData.fields" [type]="field.type" [name]="field.name" [placeholder]="field.placeholder" required class="main__input--fieldset" [formControlName]="field.name">
+        <input type="submit" [value]="formData.submitText" id="confirm" class="main__input--fieldset">
+      </fieldset>
+    </form>
+  </div>
+</main>

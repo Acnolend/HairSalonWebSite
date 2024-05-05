@@ -1,0 +1,178 @@
+.header {
+  position: fixed;
+  left:0;
+  width: 100%;
+  height: auto;
+  top: 0;
+  padding: 0.2% 8%;
+  font-size: 120%;
+  justify-content: space-between;
+  background-color: #402B3A;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+
+.header__img--div {
+  height: 50px;
+  margin: auto;
+  filter: invert(1);
+
+  transition-property: height;
+  transition-duration: 500ms;
+}
+
+.header__img--div:hover {
+  height: 60px;
+}
+
+.header__a--nav,
+.header__a--nav2{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.header__li--nav {
+  justify-content: center;
+  display: inline-block;
+  padding: 0 20px;
+
+  transition-property: font-size;
+  transition-duration: 500ms;
+}
+
+.header__li--nav:hover,
+.header__li--nav2:hover {
+  font-size: 125%;
+}
+
+.header__li--nav2 {
+  display: inline-block;
+  margin: 10px;
+
+
+  transition-property: font-size;
+  transition-duration: 500ms;
+}
+
+.header__nav3 {
+  display: none;
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 414px) and (min-height: 640px) and (max-height: 896px) {
+  .header__nav3 {
+    order: 1;
+  }
+
+  .header__div {
+    order: 2;
+  }
+
+  .header__nav2 {
+    order: 3;
+  }
+
+  .header__nav3 {
+    display: block;
+  }
+
+  .header__div--nav3 {
+    display: block;
+    position: relative;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__button--div {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .header__div--div {
+    display: none;
+    position: absolute;
+    background-color: #2D1E29;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+    animation: fadeIn 0.5s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .header__a--div {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .header__div--nav3:hover .header__div--div {
+    display: block;
+  }
+
+  .header__img--button {
+    height: 30px;
+    margin: auto;
+    filter: invert(1);
+  }
+
+  .header__img--div {
+    height: 40px;
+  }
+
+  .header__nav2{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header__li--nav2 {
+    margin: 0;
+  }
+
+
+  .header__a--nav2 {
+    font-size: 80%;
+  }
+
+
+  .header{
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 883px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 962px) {
+
+  .header__img--div {
+    height: 45px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .header__li--nav {
+    font-size: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .header__li--nav2 {
+    font-size: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
